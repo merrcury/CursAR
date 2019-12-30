@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "530838227340",
+    "firebase_url": "https://digital-googl.firebaseio.com",
+    "project_id": "digital-googl",
+    "storage_bucket": "digital-googl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530838227340:android:c0e5c223cd378463202ea9",
+        "android_client_info": {
+          "package_name": "com.mercury.bfdi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530838227340-6dmo7ul0l94anp84tejv6rm6rfvh9e05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM-1LZBm8MSVXhKz8jAZwEy1zzHUl8HTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530838227340-6dmo7ul0l94anp84tejv6rm6rfvh9e05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
