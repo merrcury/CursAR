@@ -1,6 +1,6 @@
 # CursAR
 
-![Made with love in India](https://madewithlove.now.sh/in?colorA=%23000000&colorB=%23083b8c&template=for-the-badge)
+![Made with love in India](https://madewithlove.now.sh/in?heart=true&colorA=%23000000&colorB=%230c0361&template=for-the-badge)
 
 CursAR is an Augmented Reality App developed on Unity 3D with the help of Vuforia Engine.
 
