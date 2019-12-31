@@ -9,10 +9,10 @@ The student generally feels difficulty in visualizing 2-D Images in the textbook
  
 We currently support Android Platform. We are constantly working around the clock to provide an all-around experience. This is a Minimum Viable Product of our initial thoughts. We will increase functionality and features as per feedback.
  
-:triangular_flag_on_post: Download App from [Here](bit.ly/cursARapp) (Follow the Instructions Given).
+:triangular_flag_on_post: Download App from [Here](http://bit.ly/cursARapp) (Follow the Instructions Given).
 
 :rocket: Minimun Android Version : Android Marshmallow 6.0
 
-:mailbox_with_mail: Give Feedback [Here](bit.ly/cursARweb).
+:mailbox_with_mail: Give Feedback [Here](http://bit.ly/cursARweb).
 
  
