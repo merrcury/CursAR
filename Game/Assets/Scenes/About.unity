@@ -661,15 +661,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "This AR App is work of team Error404 during Google's Build For Digital
-    India. Motive behind this app make is to bring students closer to reality and
-    help them visualize easily and efficiently. \n\nThis Entire Solution is designed
-    in such way that It can be distributed with NCERT Books in a very cost effective
-    way. This solution will not cause hike in price of books and solution itself can
-    be distributed for free. This Solution can be made into a one-stop solution for
-    student visulaiztion. \n\nHow to Use : Open Camera & Simply Point Toward Supported
-    Visulaiation. \n\nDo drop line of feedback @ teamerror404.co/feedback or on Google
-    Play Store.\nYour feedback will help Us Improve our Services. "
+  m_Text: "This AR app is the work of team Error404 during Google's Build For Digital
+    India. The motive behind this app is to bring students closer to reality and help
+    them visualize easily and efficiently. \n\nThis Entire Solution is designed in
+    such a way that It can be distributed with NCERT Books in a very cost-effective
+    way. This solution will not cause a hike in the price of books and the solution
+    itself can be distributed for free. This Solution can be made into a one-stop
+    solution for student visualization. \n\nHow to Use: Open Camera & Simply Point
+    Toward Supported Visualisation. \n\nDo a drop line of feedback at our website.\nYour
+    feedback will help us improve our Services. "
 --- !u!222 &651797704
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1299,7 +1299,7 @@ GameObject:
   - component: {fileID: 1235861153}
   - component: {fileID: 1235861154}
   m_Layer: 5
-  m_Name: MainMenu
+  m_Name: Team
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1497,8 +1497,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 732833058}
   m_HandleRect: {fileID: 732833057}
   m_Direction: 2
-  m_Value: 0.9999997
-  m_Size: 0.7064293
+  m_Value: 0.99999964
+  m_Size: 0.738161
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
