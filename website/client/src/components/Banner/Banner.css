@@ -1,0 +1,32 @@
+.banner {
+  width: 100vw;
+  height: 80vh;
+  background-image: url('../../resources/bdi-banner.jpeg');
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.banner-image {
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.45);  
+  z-index: 2;
+}
+
+
+@media (max-width: 875px) {
+  .banner {
+    width: 100vw;
+    height: 60vh;
+  }
+}
+@media (max-width: 475px) {
+  .banner {
+    width: 100vw;
+    height: 40vh;
+  }
+}
+
+
+

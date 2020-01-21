@@ -1,0 +1,15 @@
+.timeline-main {
+  background-color: #E2E2E3;
+}
+
+.timeline-heading {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  font-size: 26px;
+  color: black;
+  font-weight: 800;
+}
