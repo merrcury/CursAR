@@ -1,0 +1,10 @@
+.typing-main {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9e9e9efa;
+  font-weight: 800;
+  font-size: 24px;
+}
