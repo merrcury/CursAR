@@ -19,6 +19,16 @@ Fixes # (issue, if any)
 - JRE & JDK Version: (eg. openJDK 8.0 or Oracle 8.0)
 - .NET Framework Version: (eg. 3 or 4)
 
+
+## Details Regarding Website
+
+- ReactJs 
+- MaterialUI
+- NodeJs
+- ExpressJs
+- MongoDB
+- Firebase
+
 ## Type of change
 
 Please delete options that are not relevant.
