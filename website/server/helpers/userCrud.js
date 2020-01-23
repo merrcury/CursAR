@@ -1,5 +1,7 @@
 const admin=require('firebase-admin');
 const keys=require('../config/keys');
+const User=require('../models/userSchema');
+const feed=require('../models/feedback');
 
 var serviceAccount = require('../config/digital-googl.json');
 admin.initializeApp({
@@ -60,7 +62,18 @@ const userOperations={
           });
           // update database with new user
           if(user.user.emailVerified){
-            var db=admin.database();
+            User.findOne({"uid":user.user.uid},(err,doc)=>{
+              if(!doc){
+                User.create({
+                  "uid":user.user.uid,
+                  "email":user.user.email,
+                  "userName":user.user.userName
+                })
+                console.log("User added in database :)")
+              }else{console.log("User already exists in database")}
+            })
+
+        /*    var db=admin.database();
           var userRef=db.ref("users");
           var users=userRef.child(user.user.uid);
           users.once('value',function(snap){
@@ -73,7 +86,7 @@ const userOperations={
                 "uploadedModels":["null"]
               });
             }
-          })
+          })   */
          
          }
         },function(err){
@@ -100,7 +113,67 @@ const userOperations={
             res.status(300).json({"error":error});
             // Handle error
           });
-    }
+    },
+    feedback(obj,res){
+      feed.create(obj,(err,doc)=>{
+        if(err){
+          res.status(500).json({"msg":"Internal server error"});
+        }else{
+          res.status(200).json({"msg":"feedback submitted","doc":doc});
+        }
+      })
+   /*   var db=admin.database();
+      var feedRef=db.ref("feedback");
+      feedRef.push(obj,(err,doc)=>{
+        if(err){
+          res.status(400).json({"msg":err});
+        }
+        else{
+          res.status(200).json({"msg":"Feedback submitted"});
+        }
+      }) */
+    },
+    alluser(res){
+      User.find({},{"uid":1,"email":1,"userName":1},(err,doc)=>{
+        if(err){
+          res.status(300).json({"msg":"Internal service error"});
+        }else{
+          if(doc){
+            res.status(200).json({"doc":doc});
+          }else{res.status(205).json({"msg":"No record found"})};
+        }
+      })
+  /*    var db=admin.database();
+      var user=db.ref("users");
+      user.once('value',function(snap){
+        var result=Object.keys(snap.val()).map(function(key){
+          return snap.val()[key];
+        })
+          console.log(result);
+          res.json({"doc":snap.val(),"result":result});
+      }) */
+    },
+    displayFeedback(res){
+      feed.find({},{"name":1,"message":1},(err,doc)=>{
+        if(err){
+          res.status(500).json({"msg":"Internal server error"});
+        }else{
+          if(doc){
+            res.status(200).json({"doc":doc});
+          }else{
+            res.status(205).json({"msg":"no feedback found"});
+          }
+        }
+      })
+   /*   var db=admin.database();
+      var feed=db.ref("feedback");
+      feed.once('value',function(snap){
+        var result=Object.keys(snap.val()).map(function(key){
+          return snap.val()[key];
+        })
+          res.json({"feedback":result});
+      }) */
+  }
 
 }
 

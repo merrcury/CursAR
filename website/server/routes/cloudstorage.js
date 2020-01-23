@@ -8,15 +8,12 @@ exports.upload = (req, res) => {
 
     data = JSON.parse(JSON.stringify(req.body));
     modelOperation.uploadModel(data,res);
- 
-  
       if(!file) {
         res.status(500);
         res.json('file not found');
         return;
       }
- 
-      let fileUpload = req.bucket.file(req.body.uid+req.body.name+"."+extname);
+      let fileUpload = req.bucket.file(req.body.uid+req.body.mid+"."+extname);
     // Get File from request Form data.
     fileUpload.save(new Buffer(file.buffer)).then(  
         result => {

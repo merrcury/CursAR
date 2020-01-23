@@ -17,4 +17,15 @@ route.post('/verifyToken',(req,res)=>{
     userOperation.verifyToken(req.body,res);
 })
 
+route.post('/feedback',(req,res)=>{
+    userOperation.feedback(req.body,res);
+})
+
+route.get('/alluser',(req,res)=>{
+    userOperation.alluser(res);
+})
+
+route.get('/displayFeedback',(req,res)=>{
+    userOperation.displayFeedback(res);
+})
 module.exports=route;

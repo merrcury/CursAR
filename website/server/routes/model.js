@@ -7,7 +7,11 @@ const cloudStorageCtrl = require('./cloudstorage');
 
 const modelOperation=require('../helpers/modelCrud');
 
-
+//var serviceAccount = require('../adminsdk.json');
+// admin.initializeApp({
+//     credential: admin.credential.cert(serviceAccount),
+//     storageBucket: "gs://fir-76656.appspot.com"
+//   });
 
   var bucket = admin.storage().bucket();
 
@@ -41,6 +45,14 @@ const modelOperation=require('../helpers/modelCrud');
 
   route.post('/displayLocked',(req,res)=>{
     modelOperation.dislayLocked(req.body,res);
+  })
+
+  route.post('/displayAccepted',(req,res)=>{
+    modelOperation.dislayAccepted(req.body,res);
+  })
+
+  route.post('/modelDetail',(req,res)=>{
+    modelOperation.modelDetail(req.body,res);
   })
 
   route.post('/uploadModeltest',(req,res)=>{
