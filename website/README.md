@@ -48,6 +48,4 @@ npm start
 
 ````
 
-This will start server at port 3001 visit
-
-[http://localhost:3001](http://localhost:3001)
+This will start server at port 3001 visit [http://localhost:3001](http://localhost:3001)
