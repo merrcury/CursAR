@@ -79,12 +79,33 @@ const adminOperation={
         }
     },
     sort(res){
-        User.find({},(err,doc)=>{
-            console.log(doc);
-            res.json({"doc":doc});
+        User.find({},{"acceptedModels":1,"uploadedModels":1,"userName":1},(err,doc)=>{
+          //  console.log(doc);
+            var arr=[];
+              for(let a of doc){
+                  console.log(a);
+                 var value= a.acceptedModels.length+a.uploadedModels.length;
+                 var name=a.userName;
+                 var obj={
+                     "name":name,
+                     "value":value,
+                     "accepted":a.acceptedModels.length,
+                     "uploaded":a.uploadedModels.length
+
+                 }
+                 arr.push(obj);
+              }
+              console.log(arr);
+              arr.sort(function (a, b) {
+                return b.value - a.value;
+              });
+              console.log(arr);
+             
+            res.json({"result":arr});
+          //  res.json({"doc":doc});
         })
     }
-}
+};
 
 
 module.exports=adminOperation;

@@ -67,7 +67,7 @@ const userOperations={
                 User.create({
                   "uid":user.user.uid,
                   "email":user.user.email,
-                  "userName":user.user.userName
+                  "userName":user.user.displayName
                 })
                 console.log("User added in database :)")
               }else{console.log("User already exists in database")}
