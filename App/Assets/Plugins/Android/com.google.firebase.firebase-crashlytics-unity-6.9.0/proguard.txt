@@ -1,0 +1,2 @@
+-keep,includedescriptorclasses public class com.crashlytics.android.Crashlytics{ *; }
+-keep,includedescriptorclasses public class io.fabric.sdk.android.services.common.DataCollectionArbiter{ *; }

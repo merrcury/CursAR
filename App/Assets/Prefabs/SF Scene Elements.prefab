@@ -28,7 +28,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
-  - {fileID: 400002}
+  - {fileID: 7421772650231659752}
   - {fileID: 400006}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -41,8 +41,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 400002}
+  - component: {fileID: 7421772650231659752}
   - component: {fileID: 21200000}
+  - component: {fileID: 3040486650860910864}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -50,20 +51,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &400002
-Transform:
+--- !u!224 &7421772650231659752
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: 0, z: 80}
+  m_LocalPosition: {x: 0, y: 0, z: 80}
   m_LocalScale: {x: -20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -15, y: 0}
+  m_SizeDelta: {x: 12.8, y: 10.24}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -112,6 +118,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!222 &3040486650860910864
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_CullTransparentMesh: 0
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0
