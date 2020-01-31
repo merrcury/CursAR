@@ -63,7 +63,7 @@ export default class AboutUs extends Component {
 						<div className='card'>
 							<div className='card-image'>
 								<img
-									src={require('../../resources/pawan1.jpg')}
+									src={require('../../resources/pawan.jpg')}
 									alt='Pawan Jain '
 								/>
 							</div>

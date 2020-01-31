@@ -8,11 +8,11 @@ import ForgotPass from './views/ForgotPass'
 import Categories from './views/Categories'
 import Fame from './views/Fame'
 import Submit from './views/Submit'
-import AddModel from './views/Admin/AddModel'
-import AllUser from './views/Admin/AllUser'
-import AllFeedback from './views/Admin/AllFeedback'
-import AdminSignIn from './views/Admin/SignIn'
-import AcceptModel from './views/Admin/AcceptModel'
+// import AddModel from './views/Admin/AddModel'
+// import AllUser from './views/Admin/AllUser'
+// import AllFeedback from './views/Admin/AllFeedback'
+// import AdminSignIn from './views/Admin/SignIn'
+// import AcceptModel from './views/Admin/AcceptModel'
 import ErrorPage from './views/ErrorPage'
 function App() {
 	function check() {
@@ -80,7 +80,7 @@ function App() {
 							</div>
 						)}
 					/>
-					<Route
+					{/* <Route
 						path='/admin/signin'
 						exact
 						render={props =>
@@ -144,7 +144,7 @@ function App() {
 								<Redirect to='/admin/signin' />
 							)
 						}
-					/>
+					/> */}
 					<Route
 						path='*'
 						render={props => (
