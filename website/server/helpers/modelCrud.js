@@ -11,8 +11,8 @@ const modelOperation={
           .then(function(decodedToken) {
             if(obj.uid==decodedToken.uid){  //mongo
               User.findOne({"uid":obj.uid},{"lockedModels":{ $elemMatch: { mid: obj.mid } }},(err,doc)=>{
-                console.log("doc at line 14 is",doc);
-                if(doc){
+                console.log("doc at line 14 is",doc.lockedModels.length);
+                if(doc.lockedModels.length){
                   res.status(305).json({"msg":"You have already locked this model :("});
                 }
                 else{
@@ -108,7 +108,7 @@ uploadModel(obj,res){
 },
 displayModel(obj,res){
     if(obj.id){ //mongo
-      model.findMany({"id":obj.id},(err,doc)=>{
+      model.find({"id":obj.id},(err,doc)=>{
         if(err){res.status(500).json({"msg":"something went wrong"})}
         else{
           if(doc){
