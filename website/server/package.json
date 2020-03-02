@@ -16,7 +16,7 @@
     "firebase-admin": "^8.9.2",
     "mongoose": "^5.9.1",
     "multer": "^1.4.2",
-    "nodemailer": "^6.4.2",
+    "nodemailer": "^6.4.4",
     "nodemon": "^2.0.2"
   }
 }
