@@ -1,4 +1,5 @@
 # CursAR
+[![HitCount](http://hits.dwyl.com/merrcury/merrcury/CursAR.svg)](http://hits.dwyl.com/merrcury/merrcury/CursAR)
 
 <div align='center'>
  
